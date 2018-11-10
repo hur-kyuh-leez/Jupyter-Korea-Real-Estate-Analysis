@@ -24,7 +24,7 @@ def normalization(array):
     return y
 
 
-# find prior event
+# Find prior event
 def granger(array1, array2):
     df = pd.DataFrame(normalization(array1))
     df['1'] = pd.DataFrame(normalization(array2))
@@ -43,13 +43,13 @@ def granger(array1, array2):
 df = pd.read_csv('data/data.csv')
 date = df['date'].values
 gangnam_price = df['gangnam_price'].values
-Seeking_jobs = df['Seeking_jobs_in_Seoul_numbers'].values
-Seeking_jobs = Seeking_jobs[np.logical_not(np.isnan(Seeking_jobs))]
-min = min([len(Seeking_jobs), len(gangnam_price)])
-Seeking_jobs = Seeking_jobs[:min]
+seoul_recuiting_number = df['seoul_recuiting_number'].values
+seoul_recuiting_number = seoul_recuiting_number[np.logical_not(np.isnan(seoul_recuiting_number))]
+min = min([len(seoul_recuiting_number), len(gangnam_price)])
+seoul_recuiting_number = seoul_recuiting_number[:min]
 gangnam_price = gangnam_price[:min]
 
 
 
 if __name__== '__main__':
-    granger(gangnam_price, Seeking_jobs)
+    granger(gangnam_price, seoul_recuiting_number)
