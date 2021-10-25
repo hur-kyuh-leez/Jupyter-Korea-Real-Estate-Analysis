@@ -15,7 +15,7 @@ you have a higher chance of selling your house higher or buying your new house l
 The biggest investment for a family is housing, why not take a look into this project?
 
 ## Jupyter Notebook
-* [Hyuk Kyu Lee's analysis in 2018](Number_Seeking_Employement_vs_Real_Estate_Price.ipynb)
+* [Hyuk Kyu Lee's analysis in 2018](https://github.com/hur-kyuh-leez/Jupyter-Korea-Real-Estate-Analysis/blob/master/Recuiting_Number_vs_Real_Estate_Price.ipynb)
 
 ## Data
 * [Recuiting Number](http://kosis.kr/statHtml/statHtml.do?orgId=383&tblId=DT_38301_2013_N1020&conn_path=I3)
